@@ -1,165 +1,240 @@
-<!doctype html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xưởng Mộc Anh Hoa - Nội thất gỗ theo yêu cầu</title>
-    <meta
-      name="description"
-      content="Landingpage giới thiệu sản phẩm gỗ. Xem toàn bộ sản phẩm, xem chi tiết và liên hệ qua Zalo."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/styles.css" />
-  </head>
-  <body data-page="home">
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="./index.html" aria-label="Trang chủ">
-          <span class="logo-mark" aria-hidden="true">[]</span>
-          <span class="logo-text">Xưởng Mộc Anh Hoa</span>
-        </a>
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeWood | Tinh Hoa Nội Thất Gỗ Cao Cấp</title>
+    <meta name="description" content="Khám phá bộ sưu tập nội thất đồ gỗ cao cấp, được chế tác thủ công tinh xảo, mang lại vẻ đẹp sang trọng và đẳng cấp cho ngôi nhà của bạn.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'wood-dark': '#3d2b1f',
+                        'wood-primary': '#5d4037',
+                        'wood-accent': '#d4af37',
+                        'wood-light': '#fdfbf7',
+                    },
+                    fontFamily: {
+                        'sans': ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-wood-light text-wood-dark font-sans overflow-x-hidden">
 
-        <nav class="nav">
-          <a class="nav-link" href="./index.html">Trang chủ</a>
-          <a class="nav-link" href="./products.html">Sản phẩm</a>
-          <a class="nav-link" href="#contact">Liên hệ</a>
-        </nav>
-
-        <a id="headerZaloBtn" class="btn btn-sm btn-secondary" href="#" target="_blank" rel="noopener">
-          Nhắn Zalo
-        </a>
-      </div>
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-wood-dark/10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-3xl font-black tracking-tighter text-wood-dark">
+                VIBE<span class="text-wood-accent">WOOD</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-wood-accent transition-colors">Trang chủ</a>
+                <a href="#products" class="hover:text-wood-accent transition-colors">Sản phẩm</a>
+                <a href="#about" class="hover:text-wood-accent transition-colors">Về chúng tôi</a>
+                <a href="#contact" class="hover:text-wood-accent transition-colors">Liên hệ</a>
+            </nav>
+            <a href="https://zalo.me/0901234567" target="_blank" class="bg-wood-dark text-white px-6 py-2 rounded-full hover:bg-wood-accent transition-all duration-300 transform hover:scale-105 font-bold">
+                Zalo Tư Vấn
+            </a>
+        </div>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <h1 class="hero-title">Nội thất gỗ đẹp, rõ nét, nhìn thoải mái</h1>
-            <p class="hero-subtitle">
-              Thiết kế mạch lạc, phông chữ dễ đọc. Xem đầy đủ sản phẩm, giá, chất liệu và tình trạng
-              ngay tại đây. Muốn liên hệ: bấm Zalo để gửi đúng sản phẩm bạn quan tâm.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./products.html">Xem tất cả sản phẩm</a>
-              <a class="btn btn-ghost" href="#contact">Nhận tư vấn</a>
-            </div>
-            <div class="hero-badges" aria-label="Điểm mạnh">
-              <div class="badge">Gỗ thật, rõ vân</div>
-              <div class="badge">Giá minh bạch</div>
-              <div class="badge">Tư vấn nhanh qua Zalo</div>
-            </div>
-          </div>
-
-          <div class="hero-card" aria-label="Danh mục sản phẩm nổi bật">
-            <div class="hero-card-top">
-              <div class="kpi">
-                <div class="kpi-value" id="kpiProductCount">0</div>
-                <div class="kpi-label">Sản phẩm</div>
-              </div>
-              <div class="kpi">
-                <div class="kpi-value">24-48h</div>
-                <div class="kpi-label">Tư vấn</div>
-              </div>
-            </div>
-            <div class="hero-card-body">
-              <p class="muted">
-                Gợi ý nhanh: xem các mẫu đang được cập nhật gần đây và bấm “Liên hệ qua Zalo” để gửi
-                đúng tên sản phẩm.
-              </p>
-              <div id="featuredProducts" class="featured-grid"></div>
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1538688598194-58e9900f3ba0?q=80&w=2070&auto=format&fit=crop" alt="Hero Furniture" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/40"></div>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-title">
-            <h2>Vì sao khách chọn xưởng?</h2>
-            <p class="muted">Phong cách đơn giản, dễ nhìn. Thông tin sản phẩm rõ ràng.</p>
-          </div>
-
-          <div class="feature-grid">
-            <div class="feature">
-              <div class="feature-icon" aria-hidden="true">✓</div>
-              <h3 class="feature-title">Đọc dễ, không rối mắt</h3>
-              <p class="muted">Phông Inter, bố cục gọn gàng, khoảng cách hợp lý.</p>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-3xl text-white" data-aos="fade-up">
+                <h1 class="text-6xl md:text-8xl font-black mb-6 leading-[0.9] tracking-tighter">
+                    TINH HOA <br><span class="text-wood-accent">NỘI THẤT</span> VIỆT
+                </h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 font-light max-w-lg leading-relaxed">
+                    Mang vẻ đẹp thiên nhiên và bàn tay nghệ nhân vào không gian sống của bạn với những tác phẩm đồ gỗ tinh xảo nhất.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="showAllProducts()" class="bg-wood-accent text-wood-dark px-10 py-4 rounded-xl font-black hover:bg-white transition-all transform hover:scale-105 shadow-xl">
+                        KHÁM PHÁ CATALOG
+                    </button>
+                    <a href="#about" class="glass text-white px-10 py-4 rounded-xl font-black hover:bg-white/20 transition-all border border-white/30 backdrop-blur-md">
+                        VỀ CHÚNG TÔI
+                    </a>
+                </div>
             </div>
-            <div class="feature">
-              <div class="feature-icon" aria-hidden="true">🏷</div>
-              <h3 class="feature-title">Giá & tình trạng rõ ràng</h3>
-              <p class="muted">Mỗi sản phẩm có giá, chất liệu và trạng thái (còn/đặt...).</p>
-            </div>
-            <div class="feature">
-              <div class="feature-icon" aria-hidden="true">⚡</div>
-              <h3 class="feature-title">Liên hệ đúng sản phẩm</h3>
-              <p class="muted">Bấm Zalo là gửi sẵn tên mẫu bạn đang xem.</p>
-            </div>
-          </div>
         </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="container contact-grid">
-          <div>
-            <h2>Liên hệ ngay</h2>
-            <p class="muted">
-              Nếu bạn chưa chắc mẫu nào phù hợp, bấm Zalo để gửi lời nhắn tư vấn. Bạn có thể trả lời
-              thông tin và nhận báo giá nhanh.
-            </p>
-            <div class="contact-items">
-              <div class="contact-item">
-                <div class="contact-label">Email</div>
-                <div class="contact-value" id="siteEmail">-</div>
-              </div>
-              <div class="contact-item">
-                <div class="contact-label">Số điện thoại</div>
-                <div class="contact-value" id="sitePhone">-</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-card">
-            <div class="contact-card-title">Nhắn Zalo để nhận báo giá</div>
-            <p class="muted" style="margin-top: 6px">
-              Nội dung sẽ được điền tự động (bạn có thể chỉnh lại trước khi gửi).
-            </p>
-            <a id="zaloContactBtn" class="btn btn-primary btn-wide" href="#" target="_blank" rel="noopener">
-              Liên hệ qua Zalo
-            </a>
-            <div class="contact-note">
-              <div class="dot" aria-hidden="true"></div>
-              <span id="zaloNote">Đang tải cấu hình...</span>
-            </div>
-            <div class="contact-copy">
-              <button id="copyZaloTextBtn" class="btn btn-sm btn-secondary" type="button">
-                Sao chép nội dung nhắn
-              </button>
-              <div class="copy-preview">
-                <pre id="zaloTextPreview" class="code-block muted">-</pre>
-              </div>
-            </div>
-          </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="muted">© <span id="siteYear"></span> Xưởng Mộc Anh Hoa. Thiết kế đơn giản, dễ đọc.</div>
-        <div class="footer-links">
-          <a href="./products.html">Danh sách sản phẩm</a>
-          <a href="#contact">Liên hệ</a>
+    <!-- Products Section -->
+    <section id="products" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">Bộ Sưu Tập Đẳng Cấp</h2>
+                <div class="w-24 h-2 bg-wood-accent mx-auto rounded-full"></div>
+                <p class="mt-8 text-gray-500 max-w-2xl mx-auto text-lg">Mỗi sản phẩm là một kiệt tác nghệ thuật, kết tinh từ tâm huyết và kỹ nghệ điêu khắc truyền thống.</p>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Products will be injected by JS -->
+            </div>
+
+            <div class="mt-24 text-center">
+                <button onclick="showAllProducts()" class="group relative px-16 py-6 bg-wood-dark text-white font-black rounded-2xl overflow-hidden transition-all hover:pr-20 hover:shadow-2xl">
+                    <span class="relative z-10">XEM TOÀN BỘ SẢN PHẨM</span>
+                    <svg class="absolute right-8 top-1/2 -translate-y-1/2 w-6 h-6 opacity-0 group-hover:opacity-100 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </button>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-wood-light overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-700">
+                        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1974&auto=format&fit=crop" alt="Craftsmanship" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-wood-accent/20 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-wood-dark/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+                <div class="lg:w-1/2">
+                    <span class="text-wood-accent font-black tracking-[0.3em] uppercase text-xs mb-4 block">Câu chuyện VibeWood</span>
+                    <h2 class="text-5xl md:text-6xl font-black mt-4 mb-8 tracking-tighter leading-tight">Nghệ Thuật Chế Tác <br>Bàn Tay Nghệ Nhân</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                        Chúng tôi tự hào là đơn vị tiên phong trong việc bảo tồn và phát huy giá trị của đồ gỗ mỹ nghệ truyền thống. Mỗi thớ gỗ được chọn lọc kỹ lưỡng, mỗi đường chạm khắc đều chứa đựng tâm hồn của người nghệ nhân.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-wood-accent/10 flex items-center justify-center text-wood-accent shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-wood-dark">Gỗ Quý 100%</h4>
+                                <p class="text-sm text-gray-500">Mun, Gõ, Hương...</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-wood-accent/10 flex items-center justify-center text-wood-accent shrink-0">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-wood-dark">Chế Tác Thủ Công</h4>
+                                <p class="text-sm text-gray-500">Nghệ nhân Đồng Kỵ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://zalo.me/0901234567" target="_blank" class="inline-flex items-center gap-4 text-wood-dark font-black border-b-4 border-wood-accent pb-2 hover:text-wood-accent transition-all group">
+                        LIÊN HỆ XEM XƯỞNG THỰC TẾ
+                        <svg class="w-6 h-6 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-wood-dark text-white py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-20">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-5xl font-black tracking-tighter mb-8">
+                        VIBE<span class="text-wood-accent">WOOD</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md leading-relaxed mb-10 text-lg">
+                        Chúng tôi tận tâm tạo ra những không gian sống đẳng cấp thông qua vẻ đẹp vĩnh cửu của đồ gỗ tự nhiên. Hãy để chúng tôi đồng hành cùng bạn kiến tạo tổ ấm.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-black mb-8 uppercase tracking-widest">Khám phá</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="#" class="hover:text-wood-accent transition-colors">Trang chủ</a></li>
+                        <li><a href="#products" class="hover:text-wood-accent transition-colors">Sản phẩm</a></li>
+                        <li><a href="#about" class="hover:text-wood-accent transition-colors">Câu chuyện</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-black mb-8 uppercase tracking-widest">Liên hệ</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li>Địa chỉ: Làng nghề Đồ Gỗ, Đồng Kỵ, Bắc Ninh</li>
+                        <li>Hotline/Zalo: 0901.234.567</li>
+                        <li>Email: contact@vibewood.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-20 pt-10 text-center text-gray-500 text-sm">
+                &copy; 2024 VibeWood. All rights reserved. Designed for Excellence.
+            </div>
+        </div>
     </footer>
 
-    <script src="./assets/app.js" type="module"></script>
-  </body>
+    <!-- Product Modal -->
+    <div id="product-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4">
+        <div class="absolute inset-0 bg-black/80 backdrop-blur-md" onclick="closeModal()"></div>
+        <div class="bg-white rounded-[2.5rem] overflow-hidden max-w-6xl w-full relative z-10 flex flex-col md:flex-row animate-scale-in shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 z-20 bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-md transition-colors border border-white/20">
+                <svg class="w-6 h-6 text-white md:text-wood-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l18 18"></path></svg>
+            </button>
+            <div class="md:w-3/5 h-80 md:h-[650px] overflow-hidden">
+                <img id="modal-image" src="" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="md:w-2/5 p-10 md:p-16 flex flex-col justify-center bg-white">
+                <h3 id="modal-title" class="text-4xl font-black text-wood-dark mb-2 tracking-tighter leading-none">Product Title</h3>
+                <p id="modal-price" class="text-3xl text-wood-accent font-black mb-8">Liên hệ báo giá</p>
+                <div class="prose prose-sm text-gray-600 mb-10 overflow-y-auto max-h-[350px] pr-4">
+                    <p id="modal-description" class="leading-relaxed text-base mb-6">Product detailed description goes here...</p>
+                    <div id="modal-specs">
+                        <!-- Specs will be injected -->
+                    </div>
+                </div>
+                <a id="modal-zalo-btn" href="#" target="_blank" class="w-full btn-premium bg-wood-dark text-white text-center py-5 rounded-2xl font-black hover:bg-wood-accent transition-all duration-300 flex items-center justify-center gap-4 shadow-xl text-lg">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17.65 14.35C17.65 14.35 17.65 14.35 17.64 14.36L15.65 16.35C15.36 16.64 14.89 16.64 14.6 16.35L12.35 14.1L10.1 16.35C9.81 16.64 9.34 16.64 9.05 16.35L7.05 14.35C6.76 14.06 6.76 13.59 7.05 13.3L9.3 11.05L7.05 8.8C6.76 8.51 6.76 8.04 7.05 7.75L9.05 5.75C9.34 5.46 9.81 5.46 10.1 5.75L12.35 8L14.6 5.75C14.89 5.46 15.36 5.46 15.65 5.75L17.65 7.75C17.94 8.04 17.94 8.51 17.65 8.8L15.4 11.05L17.65 13.3C17.94 13.59 17.94 14.06 17.65 14.35Z"/></svg>
+                    TƯ VẤN QUA ZALO
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catalog Overlay -->
+    <div id="catalog-overlay" class="fixed inset-0 z-[110] hidden flex-col bg-wood-light overflow-y-auto animate-slide-up">
+        <header class="sticky top-0 z-20 bg-white/90 backdrop-blur-2xl border-b border-wood-dark/5 px-8 py-6 flex justify-between items-center shadow-lg">
+            <div class="text-4xl font-black tracking-tighter text-wood-dark">
+                BỘ SƯU TẬP <span class="text-wood-accent">VIBEWOOD</span>
+            </div>
+            <button onclick="closeCatalog()" class="bg-wood-dark text-white px-8 py-4 rounded-full font-black hover:bg-wood-accent transition-colors flex items-center gap-3 shadow-xl">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l18 18"></path></svg>
+                QUAY LẠI
+            </button>
+        </header>
+        <div class="container mx-auto px-6 py-20">
+            <div id="catalog-grid" class="grid grid-cols-1 gap-16">
+                <!-- Detailed product items will be injected -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
 </html>
