@@ -1,0 +1,99 @@
+[
+  {
+    "id": "ban-go-tan-co-dien",
+    "name": "Bàn gỗ tần cổ điển",
+    "price": 2500000,
+    "unit": "bộ",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ sồi tự nhiên + sơn phủ bóng nhẹ",
+    "dimensions": "120 x 60 x 75 cm",
+    "image": "https://placehold.co/900x600/png?text=Ban+go+demo",
+    "description": "Thiết kế chắc chắn, vân gỗ rõ, bề mặt sơn phủ dễ lau chùi. Phù hợp phòng khách hoặc phòng làm việc."
+  },
+  {
+    "id": "ke-sach-treo-tuong",
+    "name": "Kệ sách treo tường",
+    "price": 980000,
+    "unit": "cái",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ thông + phủ PU",
+    "dimensions": "80 x 25 x 18 cm",
+    "image": "https://placehold.co/900x600/png?text=Ke+sach+demo",
+    "description": "Kệ gọn gàng, dễ lắp đặt. Phù hợp lưu trữ sách, trang trí phòng học hoặc văn phòng."
+  },
+  {
+    "id": "tu-ruou-goc-nho",
+    "name": "Tủ rượu góc nhỏ",
+    "price": 4200000,
+    "unit": "bộ",
+    "status": "Đặt theo yêu cầu",
+    "availability": "Đặt theo yêu cầu",
+    "material": "Gỗ óc chó + kính trong",
+    "dimensions": "60 x 60 x 180 cm",
+    "image": "https://placehold.co/900x600/png?text=Tu+ruou+demo",
+    "description": "Tủ thiết kế góc, tối ưu không gian. Có ngăn kính trưng bày và khoang chứa tiện dụng."
+  },
+  {
+    "id": "giuong-go-mat-goi",
+    "name": "Giường gỗ mặt gõi",
+    "price": 6900000,
+    "unit": "bộ",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ cao su + sơn phủ mờ",
+    "dimensions": "160 x 200 cm",
+    "image": "https://placehold.co/900x600/png?text=Giuong+demo",
+    "description": "Độ bền cao, bề mặt sơn phủ mờ hạn chế trầy xước. Phù hợp phòng ngủ gia đình."
+  },
+  {
+    "id": "ban-trang-diem-sieu-gon",
+    "name": "Bàn trang điểm siêu gọn",
+    "price": 1350000,
+    "unit": "cái",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ công nghiệp phủ melamine (tùy chọn màu)",
+    "dimensions": "70 x 40 x 75 cm",
+    "image": "https://placehold.co/900x600/png?text=Ban+trang+diem+demo",
+    "description": "Thiết kế nhỏ gọn, nhiều ngăn để đồ. Dễ dàng bố trí trong căn hộ hoặc phòng ngủ nhỏ."
+  },
+  {
+    "id": "ban-an-6-nguoi",
+    "name": "Bàn ăn 6 người",
+    "price": 5200000,
+    "unit": "bộ",
+    "status": "Đặt theo yêu cầu",
+    "availability": "Đặt theo yêu cầu",
+    "material": "Gỗ xoan đào + phủ chống nước",
+    "dimensions": "180 x 90 x 75 cm",
+    "image": "https://placehold.co/900x600/png?text=Ban+an+demo",
+    "description": "Mặt bàn rộng rãi, phù hợp gia đình. Bề mặt phủ chống nước giúp vệ sinh nhanh."
+  },
+  {
+    "id": "tivi-treo-gon",
+    "name": "Kệ tivi treo gọn",
+    "price": 1750000,
+    "unit": "bộ",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ MDF phủ veneer",
+    "dimensions": "120 x 30 x 35 cm",
+    "image": "https://placehold.co/900x600/png?text=Ke+ti+vi+demo",
+    "description": "Thiết kế treo tường gọn gàng, giúp không gian thoáng. Có khoang chứa thiết bị tiện lợi."
+  },
+  {
+    "id": "tore-go-co-dien",
+    "name": "Tổ rổ gỗ cổ điển",
+    "price": 790000,
+    "unit": "cái",
+    "status": "Còn hàng",
+    "availability": "Còn hàng",
+    "material": "Gỗ tần bì + sơn phủ an toàn",
+    "dimensions": "45 x 30 x 35 cm",
+    "image": "https://placehold.co/900x600/png?text=To+ro+go+demo",
+    "description": "Tổ rổ gỗ giúp sắp xếp gọn gàng. Phù hợp dùng trong bếp, phòng khách hoặc phòng tắm."
+  }
+]
+

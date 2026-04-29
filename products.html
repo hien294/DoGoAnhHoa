@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sản phẩm - Xưởng Mộc Anh Hoa</title>
+    <meta name="description" content="Xem toàn bộ sản phẩm gỗ: giá, chất liệu, tình trạng và chi tiết." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="products">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="Trang chủ">
+          <span class="logo-mark" aria-hidden="true">[]</span>
+          <span class="logo-text">Xưởng Mộc Anh Hoa</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav-link" href="./index.html">Trang chủ</a>
+          <a class="nav-link is-active" href="./products.html">Sản phẩm</a>
+          <a class="nav-link" href="./index.html#contact">Liên hệ</a>
+        </nav>
+
+        <a id="headerZaloBtn" class="btn btn-sm btn-secondary" href="#" target="_blank" rel="noopener">
+          Nhắn Zalo
+        </a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div>
+            <h1 class="page-title">Tất cả sản phẩm</h1>
+            <p class="muted">Bấm vào “Xem chi tiết” để xem đầy đủ thông tin: giá, chất liệu, tình trạng.</p>
+          </div>
+
+          <div class="searchbar" role="search" aria-label="Tìm kiếm sản phẩm">
+            <input id="searchInput" class="input" type="search" placeholder="Tìm theo tên hoặc chất liệu..." />
+            <button id="clearSearchBtn" class="btn btn-sm btn-secondary" type="button">Xóa</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="products-meta">
+            <div class="muted">
+              Tổng: <span id="productsCount">0</span> sản phẩm
+            </div>
+            <div class="muted" id="filterHint"></div>
+          </div>
+
+          <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+
+          <div id="productsEmpty" class="empty-state" hidden>
+            <div class="empty-title">Không tìm thấy sản phẩm</div>
+            <p class="muted">Bạn thử từ khóa khác hoặc xóa bộ lọc.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="muted">© <span id="siteYear"></span> Xưởng Mộc Anh Hoa.</div>
+        <div class="footer-links">
+          <a href="./index.html">Trang chủ</a>
+          <a href="./index.html#contact">Liên hệ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js" type="module"></script>
+  </body>
+</html>

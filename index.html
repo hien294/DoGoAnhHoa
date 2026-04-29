@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xưởng Mộc Anh Hoa - Nội thất gỗ theo yêu cầu</title>
+    <meta
+      name="description"
+      content="Landingpage giới thiệu sản phẩm gỗ. Xem toàn bộ sản phẩm, xem chi tiết và liên hệ qua Zalo."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="Trang chủ">
+          <span class="logo-mark" aria-hidden="true">[]</span>
+          <span class="logo-text">Xưởng Mộc Anh Hoa</span>
+        </a>
+
+        <nav class="nav">
+          <a class="nav-link" href="./index.html">Trang chủ</a>
+          <a class="nav-link" href="./products.html">Sản phẩm</a>
+          <a class="nav-link" href="#contact">Liên hệ</a>
+        </nav>
+
+        <a id="headerZaloBtn" class="btn btn-sm btn-secondary" href="#" target="_blank" rel="noopener">
+          Nhắn Zalo
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="hero-title">Nội thất gỗ đẹp, rõ nét, nhìn thoải mái</h1>
+            <p class="hero-subtitle">
+              Thiết kế mạch lạc, phông chữ dễ đọc. Xem đầy đủ sản phẩm, giá, chất liệu và tình trạng
+              ngay tại đây. Muốn liên hệ: bấm Zalo để gửi đúng sản phẩm bạn quan tâm.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./products.html">Xem tất cả sản phẩm</a>
+              <a class="btn btn-ghost" href="#contact">Nhận tư vấn</a>
+            </div>
+            <div class="hero-badges" aria-label="Điểm mạnh">
+              <div class="badge">Gỗ thật, rõ vân</div>
+              <div class="badge">Giá minh bạch</div>
+              <div class="badge">Tư vấn nhanh qua Zalo</div>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Danh mục sản phẩm nổi bật">
+            <div class="hero-card-top">
+              <div class="kpi">
+                <div class="kpi-value" id="kpiProductCount">0</div>
+                <div class="kpi-label">Sản phẩm</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-value">24-48h</div>
+                <div class="kpi-label">Tư vấn</div>
+              </div>
+            </div>
+            <div class="hero-card-body">
+              <p class="muted">
+                Gợi ý nhanh: xem các mẫu đang được cập nhật gần đây và bấm “Liên hệ qua Zalo” để gửi
+                đúng tên sản phẩm.
+              </p>
+              <div id="featuredProducts" class="featured-grid"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Vì sao khách chọn xưởng?</h2>
+            <p class="muted">Phong cách đơn giản, dễ nhìn. Thông tin sản phẩm rõ ràng.</p>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">✓</div>
+              <h3 class="feature-title">Đọc dễ, không rối mắt</h3>
+              <p class="muted">Phông Inter, bố cục gọn gàng, khoảng cách hợp lý.</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">🏷</div>
+              <h3 class="feature-title">Giá & tình trạng rõ ràng</h3>
+              <p class="muted">Mỗi sản phẩm có giá, chất liệu và trạng thái (còn/đặt...).</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon" aria-hidden="true">⚡</div>
+              <h3 class="feature-title">Liên hệ đúng sản phẩm</h3>
+              <p class="muted">Bấm Zalo là gửi sẵn tên mẫu bạn đang xem.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <h2>Liên hệ ngay</h2>
+            <p class="muted">
+              Nếu bạn chưa chắc mẫu nào phù hợp, bấm Zalo để gửi lời nhắn tư vấn. Bạn có thể trả lời
+              thông tin và nhận báo giá nhanh.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <div class="contact-value" id="siteEmail">-</div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label">Số điện thoại</div>
+                <div class="contact-value" id="sitePhone">-</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-title">Nhắn Zalo để nhận báo giá</div>
+            <p class="muted" style="margin-top: 6px">
+              Nội dung sẽ được điền tự động (bạn có thể chỉnh lại trước khi gửi).
+            </p>
+            <a id="zaloContactBtn" class="btn btn-primary btn-wide" href="#" target="_blank" rel="noopener">
+              Liên hệ qua Zalo
+            </a>
+            <div class="contact-note">
+              <div class="dot" aria-hidden="true"></div>
+              <span id="zaloNote">Đang tải cấu hình...</span>
+            </div>
+            <div class="contact-copy">
+              <button id="copyZaloTextBtn" class="btn btn-sm btn-secondary" type="button">
+                Sao chép nội dung nhắn
+              </button>
+              <div class="copy-preview">
+                <pre id="zaloTextPreview" class="code-block muted">-</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="muted">© <span id="siteYear"></span> Xưởng Mộc Anh Hoa. Thiết kế đơn giản, dễ đọc.</div>
+        <div class="footer-links">
+          <a href="./products.html">Danh sách sản phẩm</a>
+          <a href="#contact">Liên hệ</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js" type="module"></script>
+  </body>
+</html>
