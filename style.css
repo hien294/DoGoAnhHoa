@@ -1,138 +1,326 @@
 /* Custom Animations */
 @keyframes scale-in {
-    0% { transform: scale(0.95); opacity: 0; }
-    100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
-    0% { transform: translateY(20px); opacity: 0; }
-    100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes reveal {
-    0% { width: 0; }
-    100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-.animate-scale-in { animation: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-.animate-slide-up { animation: slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-scale-in {
+  animation: scale-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.animate-slide-up {
+  animation: slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
 
 /* Premium Glassmorphism */
 .glass {
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .glass-dark {
-    background: rgba(15, 12, 10, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 12, 10, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #fdfbf7; }
-::-webkit-scrollbar-thumb { background: #3d2b1f; border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: #d4af37; }
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d2b1f;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
 
 /* Product Card Enhancements */
 .product-card {
-    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    position: relative;
-    overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .product-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border: 2px solid transparent;
-    transition: all 0.6s ease;
-    pointer-events: none;
-    border-radius: inherit;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  transition: all 0.6s ease;
+  pointer-events: none;
+  border-radius: inherit;
 }
 
 .product-card:hover::after {
-    border-color: #d4af37;
-    inset: 10px;
+  border-color: #d4af37;
+  inset: 10px;
 }
 
 .product-card .image-zoom {
-    transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .product-card:hover .image-zoom {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 /* Section Reveal */
 [data-aos="fade-up"] {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-aos="fade-up"].is-visible {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Typography Details */
 .text-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
-    color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
 }
 
 .font-sans {
-    font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* Decorative elements */
 .wood-gradient {
-    background: linear-gradient(135deg, #3d2b1f 0%, #5d4037 100%);
+  background: linear-gradient(135deg, #3d2b1f 0%, #5d4037 100%);
 }
 
 .accent-line {
-    position: relative;
+  position: relative;
 }
 
 .accent-line::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    height: 4px;
-    background: #d4af37;
-    animation: reveal 1s ease forwards;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 4px;
+  background: #d4af37;
+  animation: reveal 1s ease forwards;
 }
 
 /* Custom Button */
 .btn-premium {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.4s ease;
-    z-index: 1;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
 }
 
 .btn-premium::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: 0.5s;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+  z-index: -1;
 }
 
 .btn-premium:hover::before {
-    left: 100%;
+  left: 100%;
+}
+
+/* Custom Animations */
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-scale-in {
+  animation: scale-in 0.4s ease forwards;
+}
+.animate-slide-up {
+  animation: slide-up 0.5s ease forwards;
+}
+
+/* Scroll reveal */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+[data-aos="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Product card */
+.product-card {
+  transition: all 0.4s ease;
+  border-radius: 1.5rem;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
+}
+.product-card .image-zoom {
+  transition: transform 0.5s ease;
+}
+.product-card:hover .image-zoom {
+  transform: scale(1.05);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a03d;
+  border-radius: 10px;
+}
+
+/* glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom Animations */
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-scale-in {
+  animation: scale-in 0.4s ease forwards;
+}
+.animate-slide-up {
+  animation: slide-up 0.5s ease forwards;
+}
+
+/* Scroll reveal */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+[data-aos="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Product card */
+.product-card {
+  transition: all 0.4s ease;
+  border-radius: 1.5rem;
+}
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
+}
+.product-card .image-zoom {
+  transition: transform 0.5s ease;
+}
+.product-card:hover .image-zoom {
+  transform: scale(1.05);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a03d;
+  border-radius: 10px;
+}
+
+/* glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Back to top button visible class */
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
 }
