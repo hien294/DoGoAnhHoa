@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kiểu | Nội Thất Gỗ Cao Cấp</title>
+    <title>Ánh Hòa | Nội Thất Gỗ Cao Cấp</title>
     <meta
       name="description"
       content="Tinh hoa nội thất Việt – Sưu tập đồ gỗ thủ công từ gỗ quý, thiết kế sang trọng cho không gian sống của bạn."
     />
 
-    <!-- Fonts & Tailwind -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,13 +22,16 @@
         theme: {
           extend: {
             colors: {
-              "wood-dark": "#2c1e12",
-              "wood-primary": "#4a3124",
-              "wood-accent": "#c9a03d",
-              "wood-light": "#fefaf5",
+              dark: "#1a1a1a",
+              wood: "#2c1810",
+              gold: "#c9a03d",
+              "gold-light": "#f0d78c",
+              cream: "#fdfaf5",
+              "cream-dark": "#f5f0e8",
             },
             fontFamily: {
-              sans: ["Outfit", "sans-serif"],
+              heading: ["Cormorant Garamond", "serif"],
+              body: ["Outfit", "sans-serif"],
             },
           },
         },
@@ -36,91 +39,132 @@
     </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-wood-light text-wood-dark font-sans">
+  <body class="bg-cream text-dark font-body">
     <!-- HEADER -->
     <header
       id="main-header"
-      class="fixed w-full z-50 transition-all duration-500 bg-white/70 backdrop-blur-md border-b border-wood-dark/10"
+      class="fixed w-full z-50 transition-all duration-500 bg-white/90 backdrop-blur-xl"
     >
       <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
+        class="container mx-auto px-5 py-3 flex justify-between items-center"
       >
-        <div class="text-3xl md:text-4xl font-black tracking-tighter">KIỂU</div>
-        <nav class="hidden md:flex space-x-10 font-semibold">
-          <a href="#home" class="hover:text-wood-accent transition"
+        <a href="#home" class="flex items-center gap-2 group">
+          <div
+            class="w-9 h-9 bg-dark rounded-full flex items-center justify-center group-hover:bg-gold transition-colors"
+          >
+            <span
+              class="text-gold text-xl font-heading font-bold group-hover:text-dark transition-colors"
+              >A</span
+            >
+          </div>
+          <span class="text-2xl font-heading font-bold tracking-tight"
+            >Ánh Hòa</span
+          >
+        </a>
+
+        <nav class="hidden lg:flex items-center space-x-1">
+          <a
+            href="#home"
+            class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors"
             >Trang chủ</a
           >
-          <a href="#products" class="hover:text-wood-accent transition"
+          <a
+            href="#products"
+            class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors"
             >Sản phẩm</a
           >
-          <a href="#why-us" class="hover:text-wood-accent transition"
-            >Tại sao chọn</a
+          <a
+            href="#why-us"
+            class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors"
+            >Ưu điểm</a
           >
-          <a href="#about" class="hover:text-wood-accent transition"
+          <a
+            href="#about"
+            class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors"
             >Về chúng tôi</a
           >
-          <a href="#contact" class="hover:text-wood-accent transition"
+          <a
+            href="#contact"
+            class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors"
             >Liên hệ</a
           >
         </nav>
+
         <a
           href="https://zalo.me/0392469464"
           target="_blank"
-          class="bg-wood-dark text-white px-6 py-2 rounded-full hover:bg-wood-accent transition transform hover:scale-105 font-bold shadow-md flex items-center gap-2"
+          class="relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-dark px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 shadow-lg shadow-dark/10 hover:bg-gold hover:text-dark"
         >
+          <span
+            class="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 opacity-80 animate-ping"
+          ></span>
           <img
             src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
-            class="w-5 h-5"
+            class="relative w-4 h-4"
             alt="Zalo"
           />
-          Zalo Tư Vấn
+          <span class="relative hidden sm:inline">Tư vấn ngay</span>
         </a>
       </div>
     </header>
 
     <!-- HERO -->
-    <section
-      id="home"
-      class="relative h-screen flex items-center overflow-hidden"
-    >
+    <section id="home" class="relative min-h-screen flex items-center">
       <div class="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1538688598194-58e9900f3ba0?q=80&w=2070&auto=format"
           class="w-full h-full object-cover"
+          alt="Hero"
         />
         <div
-          class="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"
+          class="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/50 to-transparent"
         ></div>
       </div>
-      <div class="container mx-auto px-6 relative z-10 text-white">
-        <div class="max-w-3xl" data-aos="fade-up">
+
+      <div class="container mx-auto px-5 relative z-10 py-20 md:py-28">
+        <div class="max-w-xl" data-aos="fade-up">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-10 h-px bg-gold"></div>
+            <span
+              class="text-gold text-xs font-semibold uppercase tracking-[0.3em]"
+              >Nội Thất Cao Cấp</span
+            >
+          </div>
+
           <h1
-            class="text-6xl md:text-8xl font-black mb-6 leading-[1.1] tracking-tighter"
+            class="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight mb-5"
           >
-            TINH HOA <br /><span class="text-wood-accent">NỘI THẤT</span> VIỆT
+            Tinh Hoa <br />
+            <span class="text-gold italic">Nội Thất</span> Việt
           </h1>
-          <p class="text-lg md:text-xl mb-8 opacity-90 max-w-lg">
-            Mang thiên nhiên và bàn tay nghệ nhân vào không gian sống – mỗi tác
+
+          <p
+            class="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-lg font-light"
+          >
+            Mang thiên nhiên và bàn tay nghệ nhân vào không gian sống — mỗi tác
             phẩm là một câu chuyện.
           </p>
-          <div class="flex flex-wrap gap-5">
+
+          <div class="flex flex-wrap gap-4">
             <button
               onclick="showAllProducts()"
-              class="bg-wood-accent text-wood-dark px-10 py-4 rounded-xl font-black hover:bg-white transition shadow-2xl"
+              class="bg-gold text-dark px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white transition-all duration-300 shadow-2xl shadow-gold/20"
             >
-              KHÁM PHÁ CATALOG
+              Khám Phá Bộ Sưu Tập
             </button>
             <a
               href="#about"
-              class="backdrop-blur-sm bg-white/10 border border-white/30 px-10 py-4 rounded-xl font-black hover:bg-white/20 transition"
-              >VỀ CHÚNG TÔI</a
+              class="border border-white/30 text-white px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white/10 transition-all duration-300 backdrop-blur-sm"
             >
+              Về Chúng Tôi
+            </a>
           </div>
         </div>
       </div>
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+
+      <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
         <svg
-          class="w-6 h-6 text-white"
+          class="w-5 h-5 text-white/60"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -136,29 +180,38 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section id="products" class="py-24 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight">
-            Bộ sưu tập đẳng cấp
+    <section id="products" class="py-14 md:py-20 bg-white">
+      <div class="container mx-auto px-5">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <span
+            class="text-gold text-xs font-semibold uppercase tracking-[0.3em]"
+            >Bộ Sưu Tập</span
+          >
+          <h2
+            class="text-4xl md:text-6xl font-heading font-bold mt-4 mb-5 text-dark"
+          >
+            Tuyệt Tác <span class="text-gold italic">Đẳng Cấp</span>
           </h2>
-          <div class="w-24 h-1 bg-wood-accent mx-auto mt-4 rounded-full"></div>
-          <p class="text-gray-500 max-w-2xl mx-auto mt-6">
-            Mỗi sản phẩm là một kiệt tác, chạm khắc tinh xảo từ gỗ quý hiếm.
+          <div class="w-16 h-px bg-gold mx-auto"></div>
+          <p class="text-gray-500 mt-6 max-w-xl mx-auto leading-relaxed">
+            Mỗi sản phẩm là một kiệt tác được chạm khắc tinh xảo từ những loại
+            gỗ quý hiếm nhất.
           </p>
         </div>
+
         <div
           id="product-grid"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         ></div>
-        <div class="text-center mt-16">
+
+        <div class="text-center mt-14" data-aos="fade-up">
           <button
             onclick="showAllProducts()"
-            class="group relative px-8 py-4 bg-wood-dark text-white font-bold rounded-full overflow-hidden hover:pr-12 transition-all"
+            class="group inline-flex items-center gap-3 bg-dark text-white px-10 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-gold hover:text-dark transition-all duration-300 shadow-xl"
           >
-            XEM TẤT CẢ SẢN PHẨM
+            Xem Tất Cả Sản Phẩm
             <svg
-              class="inline ml-2 w-5 h-5 group-hover:translate-x-1 transition"
+              class="w-4 h-4 group-hover:translate-x-1 transition-transform"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -175,233 +228,354 @@
       </div>
     </section>
 
-    <!-- WHY US? (RÚT GỌN - chỉ 2 điểm) -->
-    <section id="why-us" class="py-20 bg-wood-light">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl md:text-4xl font-black">
-            Tại sao chọn <span class="text-wood-accent">KIỂU</span>?
-          </h2>
-          <div class="w-16 h-1 bg-wood-dark mx-auto mt-2 rounded-full"></div>
-        </div>
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md flex items-start gap-4"
-          >
-            <div class="text-3xl">🌳</div>
-            <div>
-              <h3 class="text-xl font-bold">Gỗ quý, thủ công tinh xảo</h3>
-              <p class="text-gray-500 text-sm">
-                Chọn lọc từ gỗ tự nhiên, chạm khắc bởi nghệ nhân Đồng Kỵ.
-              </p>
-            </div>
-          </div>
-          <div
-            class="bg-white p-6 rounded-2xl shadow-md flex items-start gap-4"
-          >
-            <div class="text-3xl">🛡️</div>
-            <div>
-              <h3 class="text-xl font-bold">Bảo hành trọn đời</h3>
-              <p class="text-gray-500 text-sm">
-                Đồng hành cùng bạn, bảo dưỡng miễn phí trọn vòng đời sản phẩm.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT (thông tin liên hệ mới) -->
-    <section id="about" class="py-20 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col lg:flex-row gap-12 items-center">
-          <div class="lg:w-1/2 relative">
+    <!-- ABOUT -->
+    <section id="about" class="py-14 md:py-20 bg-white">
+      <div class="container mx-auto px-5">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+          <div class="lg:w-1/2 relative" data-aos="fade-up">
             <img
               src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?q=80&w=1974&auto=format"
-              class="rounded-3xl shadow-2xl"
+              class="w-full rounded-3xl shadow-2xl"
+              alt="Workshop"
             />
-          </div>
-          <div class="lg:w-1/2">
-            <span
-              class="text-wood-accent font-bold tracking-wider uppercase text-sm"
-              >Di sản Việt</span
+            <div
+              class="absolute -bottom-6 -right-6 bg-gold text-dark p-6 rounded-2xl shadow-xl"
             >
-            <h2 class="text-4xl font-black mt-2 mb-6">Chế tác & Tâm huyết</h2>
-            <p class="text-gray-600 mb-6">
+              <div class="text-3xl font-heading font-bold">15+</div>
+              <div class="text-sm font-semibold">Năm Kinh Nghiệm</div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2" data-aos="fade-up">
+            <span
+              class="text-gold text-xs font-semibold uppercase tracking-[0.3em]"
+              >Di Sản Việt</span
+            >
+            <h2
+              class="text-4xl md:text-5xl font-heading font-bold mt-4 mb-6 text-dark"
+            >
+              Chế Tác & Tâm Huyết
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-6 max-w-xl">
               Chúng tôi tự hào bảo tồn nét đẹp đồ gỗ truyền thống, kết hợp thiết
-              kế đương đại. Mỗi sản phẩm đều là đẳng cấp.
+              kế đương đại để mỗi tác phẩm nội thất vừa sang trọng vừa ấm áp.
             </p>
-            <div class="space-y-3 text-gray-700">
-              <div class="flex items-center gap-2">
-                <span class="text-wood-accent">📍</span> Thôn Tế Cát, xã Nam
-                Xang, tỉnh Ninh Bình
+
+            <div class="grid gap-4">
+              <div class="flex items-start gap-4 rounded-2xl bg-cream p-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold/10 text-2xl"
+                >
+                  📍
+                </div>
+                <div>
+                  <div class="font-semibold text-sm">Địa chỉ</div>
+                  <div class="text-gray-600 text-sm">
+                    Thôn Tế Cát, xã Nam Xang, tỉnh Ninh Bình
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <span class="text-wood-accent">📞</span> 0392.469.464 (Zalo)
+              <div class="flex items-start gap-4 rounded-2xl bg-cream p-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold/10 text-2xl"
+                >
+                  📞
+                </div>
+                <div>
+                  <div class="font-semibold text-sm">Điện thoại</div>
+                  <div class="text-gray-600 text-sm">0392.469.464 (Zalo)</div>
+                </div>
               </div>
-              <div class="flex items-center gap-2">
-                <span class="text-wood-accent">✉️</span>
-                nguyenngochien.work@gmail.com
+              <div class="flex items-start gap-4 rounded-2xl bg-cream p-4">
+                <div
+                  class="flex h-11 w-11 items-center justify-center rounded-2xl bg-gold/10 text-2xl"
+                >
+                  ✉️
+                </div>
+                <div>
+                  <div class="font-semibold text-sm">Email</div>
+                  <div class="text-gray-600 text-sm">
+                    nguyenngochien.work@gmail.com
+                  </div>
+                </div>
               </div>
             </div>
+
             <a
               href="https://zalo.me/0392469464"
               target="_blank"
-              class="inline-flex items-center gap-2 mt-8 bg-wood-dark text-white px-6 py-3 rounded-full hover:bg-wood-accent transition font-bold"
+              class="relative mt-8 inline-flex items-center gap-3 overflow-hidden rounded-full bg-dark px-8 py-4 text-sm font-bold text-white transition-all duration-300 shadow-xl hover:bg-gold hover:text-dark"
             >
+              <span
+                class="absolute left-5 top-1/2 -translate-y-1/2 inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 opacity-80 animate-ping"
+              ></span>
               <img
                 src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
-                class="w-5 h-5"
+                class="relative w-5 h-5"
+                alt="Zalo"
               />
-              Chat Zalo ngay
+              Chat Zalo Ngay
             </a>
+
+            <div
+              id="why-us"
+              class="mt-10 rounded-[28px] bg-cream p-6 shadow-xl"
+            >
+              <div class="text-center mb-10" data-aos="fade-up">
+                <span
+                  class="text-gold text-xs font-semibold uppercase tracking-[0.3em]"
+                  >Lý Do Lựa Chọn</span
+                >
+                <h2
+                  class="text-4xl md:text-5xl font-heading font-bold mt-4 mb-4 text-dark"
+                >
+                  Tại sao chọn <span class="text-gold italic">Ánh Hòa</span>?
+                </h2>
+                <div class="mx-auto mt-3 h-px w-16 bg-gold"></div>
+              </div>
+
+              <div class="grid gap-5 md:grid-cols-2">
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-lg transition-all duration-500 hover:shadow-2xl"
+                  data-aos="fade-up"
+                >
+                  <div
+                    class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10 text-3xl"
+                  >
+                    🌳
+                  </div>
+                  <h3 class="text-2xl font-heading font-bold mb-3">
+                    Gỗ Quý & Thủ Công
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Tuyển chọn gỗ quý hiếm, chạm khắc tinh xảo bởi nghệ nhân
+                    làng Đồng Kỵ để tạo ra những sản phẩm bền đẹp theo thời
+                    gian.
+                  </p>
+                </div>
+                <div
+                  class="rounded-3xl bg-white p-6 shadow-lg transition-all duration-500 hover:shadow-2xl"
+                  data-aos="fade-up"
+                >
+                  <div
+                    class="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10 text-3xl"
+                  >
+                    🛡️
+                  </div>
+                  <h3 class="text-2xl font-heading font-bold mb-3">
+                    Bảo Hành Trọn Đời
+                  </h3>
+                  <p class="text-gray-600 leading-relaxed">
+                    Luôn đồng hành cùng khách hàng với chính sách hậu mãi chuyên
+                    nghiệp và bảo dưỡng trọn đời cho từng tác phẩm nội thất.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER (gọn, đúng thông tin mới) -->
-    <footer id="contact" class="bg-wood-dark text-white pt-12 pb-6">
-      <div class="container mx-auto px-6">
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-dark text-white pt-16 pb-8">
+      <div class="container mx-auto px-5">
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-white/10 pb-8"
+          class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-10 border-b border-white/10"
         >
           <div>
-            <div class="text-2xl font-black mb-3">KIỂU</div>
-            <p class="text-gray-300 text-sm">
-              Tinh hoa nội thất Việt – Gỗ quý, tay nghề cao.
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-10 h-10 bg-gold rounded-full flex items-center justify-center"
+              >
+                <span class="text-dark text-xl font-heading font-bold">A</span>
+              </div>
+              <span class="text-2xl font-heading font-bold">Ánh Hòa</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Tinh hoa nội thất Việt — Gỗ quý, tay nghề cao. Mang đến không gian
+              sống đẳng cấp.
             </p>
           </div>
+
           <div>
-            <h4 class="font-bold text-lg mb-3">Liên hệ</h4>
-            <ul class="space-y-1 text-gray-300 text-sm">
-              <li>📍 Thôn Tế Cát, Nam Xang, Ninh Bình</li>
-              <li>📞 0392.469.464 (Zalo)</li>
-              <li>✉️ nguyenngochien.work@gmail.com</li>
+            <h4 class="font-heading font-bold text-xl mb-4 text-gold">
+              Liên Hệ
+            </h4>
+            <ul class="space-y-3 text-gray-400 text-sm">
+              <li class="flex gap-2">📍 Thôn Tế Cát, xã Nam Xang, Ninh Bình</li>
+              <li class="flex gap-2">📞 0392.469.464 (Zalo)</li>
+              <li class="flex gap-2">✉️ nguyenngochien.work@gmail.com</li>
             </ul>
           </div>
+
           <div>
-            <h4 class="font-bold text-lg mb-3">Theo dõi</h4>
-            <div class="flex gap-3 items-center">
+            <h4 class="font-heading font-bold text-xl mb-4 text-gold">
+              Theo Dõi
+            </h4>
+            <div class="flex gap-3">
               <a
                 href="https://www.facebook.com/nguyenngoc.hien.291004"
-                class="flex items-center gap-1 hover:text-wood-accent"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-dark transition-all"
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/500px-Facebook_Logo_%282019%29.png"
-                  alt="Facebook"
-                  class="w-5 h-5"
+                  class="w-4 h-4"
+                  alt="FB"
                 />
-                Facebook
               </a>
-
               <a
                 href="https://www.instagram.com/gocien.hinz29/"
-                class="flex items-center gap-1 hover:text-wood-accent"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-dark transition-all"
               >
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                  alt="Instagram"
-                  class="w-5 h-5"
+                  class="w-4 h-4"
+                  alt="IG"
                 />
-                Instagram
               </a>
-
               <a
                 href="https://zalo.me/0392469464"
-                class="flex items-center gap-1 hover:text-wood-accent"
+                class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-dark transition-all"
               >
                 <img
                   src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
-                  class="w-5 h-5"
+                  class="w-4 h-4"
+                  alt="Zalo"
                 />
-                Zalo
               </a>
             </div>
           </div>
         </div>
-        <div class="text-center text-gray-400 text-xs pt-6">
-          © 2025 KIỂU - Nội thất gỗ cao cấp
+
+        <div class="text-center text-gray-500 text-xs pt-6">
+          © 2025 Ánh Hòa — Nội thất gỗ cao cấp. Tất cả quyền được bảo lưu.
         </div>
       </div>
     </footer>
 
-    <!-- MODAL CHI TIẾT SẢN PHẨM (thiết kế rõ ràng, logo Zalo) -->
+    <!-- PRODUCT DETAIL MODAL - NEW DESIGN -->
     <div
       id="product-modal"
-      class="fixed inset-0 z-[200] hidden items-center justify-center p-4"
+      class="fixed inset-0 z-[200] hidden items-center justify-center p-3 md:p-4"
     >
       <div
-        class="absolute inset-0 bg-black/80 backdrop-blur-sm"
+        class="absolute inset-0 bg-black/95 backdrop-blur-md"
         onclick="closeModal()"
       ></div>
+
       <div
-        class="bg-white rounded-3xl overflow-hidden max-w-5xl w-full relative z-10 flex flex-col md:flex-row max-h-[90vh]"
+        class="relative z-10 w-full max-w-4xl max-h-[95vh] overflow-y-auto bg-white rounded-none md:rounded-2xl shadow-2xl"
       >
+        <!-- Close Button -->
         <button
           onclick="closeModal()"
-          class="absolute top-4 right-4 bg-white/80 rounded-full p-2 shadow-md z-20 text-xl leading-none w-8 h-8 flex items-center justify-center"
+          class="absolute top-3 right-3 md:top-5 md:right-5 z-20 w-9 h-9 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center text-lg hover:bg-dark hover:text-white transition-all shadow-lg"
         >
           ✕
         </button>
-        <div class="md:w-2/5 bg-gray-100 flex items-center justify-center p-4">
-          <img
-            id="modal-image"
-            class="w-full h-auto max-h-80 object-contain rounded-xl"
-          />
-        </div>
-        <div class="md:w-3/5 p-6 overflow-y-auto">
-          <h3 id="modal-title" class="text-2xl md:text-3xl font-black"></h3>
-          <p
-            id="modal-price"
-            class="text-2xl text-wood-accent font-bold mt-1"
-          ></p>
-          <p
-            id="modal-description"
-            class="text-gray-600 text-sm mt-3 leading-relaxed"
-          ></p>
-          <div id="modal-specs" class="mt-4 bg-gray-50 p-4 rounded-xl"></div>
-          <a
-            id="modal-zalo-btn"
-            href="#"
-            target="_blank"
-            class="mt-6 flex items-center justify-center gap-3 bg-wood-dark text-white py-3 rounded-xl font-bold hover:bg-wood-accent transition"
+
+        <div class="grid md:grid-cols-2">
+          <!-- Image -->
+          <div
+            class="bg-cream-dark flex items-center justify-center p-6 md:p-10"
           >
             <img
-              src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
-              class="w-6 h-6"
+              id="modal-image"
+              class="w-full h-auto max-h-[50vh] md:max-h-[70vh] object-contain"
+              alt="Product"
             />
-            TƯ VẤN QUA ZALO
-          </a>
+          </div>
+
+          <!-- Info -->
+          <div class="p-6 md:p-8 lg:p-10 flex flex-col justify-between">
+            <div>
+              <span
+                class="text-gold text-xs font-semibold uppercase tracking-[0.2em]"
+                >Sản Phẩm Cao Cấp</span
+              >
+              <h3
+                id="modal-title"
+                class="text-2xl md:text-3xl font-heading font-bold mt-2 mb-2 text-dark"
+              ></h3>
+              <p
+                id="modal-price"
+                class="text-2xl md:text-3xl text-gold font-heading font-bold mb-6"
+              ></p>
+
+              <div class="w-full h-px bg-gray-200 mb-6"></div>
+
+              <h4
+                class="text-sm font-semibold uppercase tracking-wider text-dark mb-3"
+              >
+                Mô Tả
+              </h4>
+              <p
+                id="modal-description"
+                class="text-gray-600 text-sm md:text-base leading-relaxed mb-6"
+              ></p>
+
+              <h4
+                class="text-sm font-semibold uppercase tracking-wider text-dark mb-3"
+              >
+                Thông Số Kỹ Thuật
+              </h4>
+              <div id="modal-specs" class="bg-cream p-4 md:p-5 space-y-0"></div>
+            </div>
+
+            <a
+              id="modal-zalo-btn"
+              href="#"
+              target="_blank"
+              class="mt-6 flex items-center justify-center gap-3 bg-dark text-white py-4 font-bold text-sm uppercase tracking-wider hover:bg-gold hover:text-dark transition-all duration-300 shadow-xl"
+            >
+              <img
+                src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png"
+                class="w-5 h-5"
+                alt="Zalo"
+              />
+              Tư Vấn Qua Zalo Ngay
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- CATALOG OVERLAY -->
+    <!-- ALL PRODUCTS OVERLAY -->
     <div
       id="catalog-overlay"
-      class="fixed inset-0 z-[110] hidden flex-col bg-wood-light overflow-y-auto"
+      class="fixed inset-0 z-[110] hidden flex-col bg-cream overflow-y-auto"
     >
       <div
-        class="sticky top-0 bg-white/90 backdrop-blur p-4 flex justify-between border-b"
+        class="sticky top-0 bg-white/95 backdrop-blur-xl px-5 py-4 flex justify-between items-center border-b z-10"
       >
-        <div class="text-2xl font-black">BỘ SƯU TẬP KIỂU</div>
+        <div class="flex items-center gap-3">
+          <div
+            class="w-9 h-9 bg-dark rounded-full flex items-center justify-center"
+          >
+            <span class="text-gold text-lg font-heading font-bold">A</span>
+          </div>
+          <span class="text-xl md:text-2xl font-heading font-bold"
+            >Bộ Sưu Tập Ánh Hòa</span
+          >
+        </div>
         <button
           onclick="closeCatalog()"
-          class="bg-wood-dark text-white px-6 py-2 rounded-full"
+          class="bg-dark text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-gold hover:text-dark transition-all flex items-center gap-2"
         >
-          Đóng
+          ✕ Đóng
         </button>
       </div>
-      <div class="container mx-auto p-6">
-        <div id="catalog-grid" class="grid gap-8"></div>
+
+      <div class="container mx-auto px-5 py-8">
+        <div id="catalog-grid" class="grid gap-6"></div>
       </div>
     </div>
 
-    <!-- BACK TO TOP BUTTON -->
+    <!-- BACK TO TOP -->
     <button
       id="backToTop"
-      class="fixed bottom-6 right-6 bg-wood-accent text-wood-dark w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-2xl font-black opacity-0 invisible transition-all duration-300 z-40 hover:bg-wood-dark hover:text-white"
+      class="fixed bottom-6 right-6 bg-gold text-dark w-12 h-12 rounded-full shadow-2xl flex items-center justify-center text-xl font-bold opacity-0 invisible transition-all duration-300 z-40 hover:bg-dark hover:text-gold hover:scale-110"
     >
       ↑
     </button>
