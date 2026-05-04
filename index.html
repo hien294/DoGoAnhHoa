@@ -35,67 +35,7 @@
       },
     };
   </script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "Outfit", sans-serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem !important;
-      }
-
-      h2 {
-        font-size: 2rem !important;
-      }
-    }
-
-    @keyframes ring {
-      0% {
-        transform: rotate(0);
-      }
-
-      10% {
-        transform: rotate(15deg);
-      }
-
-      20% {
-        transform: rotate(-15deg);
-      }
-
-      30% {
-        transform: rotate(15deg);
-      }
-
-      40% {
-        transform: rotate(-15deg);
-      }
-
-      50% {
-        transform: rotate(0);
-      }
-
-      100% {
-        transform: rotate(0);
-      }
-    }
-
-    .ring-anim {
-      animation: ring 2s ease infinite;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body class="bg-cream text-dark font-body">
@@ -134,8 +74,8 @@
   <section id="home" class="relative min-h-screen flex pt-24 pb-8 md:py-0 md:items-center">
     <div class="absolute inset-0">
       <picture>
-        <source media="(max-width: 767px)" srcset="asset/image/Image_Phone.png" />
-        <img src="asset/image/anhnen.png" class="w-full h-full object-cover" alt="Ảnh nền nội thất" />
+        <source media="(max-width: 767px)" srcset="assets/images/Image_Phone.png" />
+        <img src="assets/images/anhnen.png" class="w-full h-full object-cover" alt="Ảnh nền nội thất" />
       </picture>
       <!-- Tối ở trên và dưới trên mobile để đọc chữ, trong suốt ở giữa để khoe chữ trên ảnh -->
       <div
@@ -587,7 +527,8 @@
     ↑
   </button>
 
-  <script src="main.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
