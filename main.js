@@ -210,7 +210,7 @@ function closeCatalog() {
 
 // ===== UTILS =====
 function generateZaloLink(productName) {
-  const msg = `Xin chào Ánh Hòa, tôi quan tâm sản phẩm: ${productName}. Vui lòng tư vấn thêm.`;
+  const msg = `Xin chào Hòa Ánh, tôi quan tâm sản phẩm: ${productName}. Vui lòng tư vấn thêm.`;
   return `https://zalo.me/${ZALO_PHONE}?text=${encodeURIComponent(msg)}`;
 }
 
