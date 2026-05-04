@@ -61,6 +61,40 @@
         font-size: 2rem !important;
       }
     }
+
+    @keyframes ring {
+      0% {
+        transform: rotate(0);
+      }
+
+      10% {
+        transform: rotate(15deg);
+      }
+
+      20% {
+        transform: rotate(-15deg);
+      }
+
+      30% {
+        transform: rotate(15deg);
+      }
+
+      40% {
+        transform: rotate(-15deg);
+      }
+
+      50% {
+        transform: rotate(0);
+      }
+
+      100% {
+        transform: rotate(0);
+      }
+    }
+
+    .ring-anim {
+      animation: ring 2s ease infinite;
+    }
   </style>
 </head>
 
@@ -93,15 +127,6 @@
           class="nav-link px-4 py-2 text-sm font-medium uppercase tracking-wider text-dark/70 hover:text-dark transition-colors">Liên
           hệ</a>
       </nav>
-
-      <a href="https://zalo.me/0392469464" target="_blank"
-        class="relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-dark px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 shadow-lg shadow-dark/10 hover:bg-gold hover:text-dark">
-        <span
-          class="absolute left-3 top-1/2 -translate-y-1/2 inline-flex h-2.5 w-2.5 rounded-full bg-emerald-400 opacity-80 animate-ping"></span>
-        <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" class="relative w-4 h-4"
-          alt="Zalo" />
-        <span class="relative hidden sm:inline">Tư vấn ngay</span>
-      </a>
     </div>
   </header>
 
@@ -487,6 +512,73 @@
     <div class="container mx-auto px-5 py-8">
       <div id="catalog-grid" class="grid gap-6"></div>
     </div>
+  </div>
+
+  <div class="fixed bottom-[5.5rem] right-6 flex flex-col gap-4 z-40">
+    <a href="tel:0838083300" class="relative w-12 h-12 group block">
+      <div class="absolute inset-0 rounded-full animate-ping bg-[#00A651] opacity-40"
+        style="animation-duration: 2s; animation-delay: 0s;"></div>
+
+      <div
+        class="absolute inset-0 bg-[#00A651] rounded-full flex items-center justify-center text-white shadow-lg shadow-[#00A651]/40 group-hover:-translate-y-1 transition-transform z-10">
+        <svg class="w-5 h-5 ring-anim" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+      </div>
+
+      <div
+        class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-dark text-white text-sm font-semibold rounded-lg opacity-0 translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl z-20">
+        0838.083.300
+        <div
+          class="absolute right-[-5px] top-1/2 -translate-y-1/2 border-y-[6px] border-y-transparent border-l-[6px] border-l-dark">
+        </div>
+      </div>
+    </a>
+
+    <a href="https://m.me/nguyenngoc.hien.291004" target="_blank" class="relative w-12 h-12 group block">
+      <div class="absolute inset-0 rounded-full animate-ping bg-[#0084FF] opacity-40"
+        style="animation-duration: 2s; animation-delay: 0.6s;"></div>
+
+      <div
+        class="absolute inset-0 bg-white rounded-full flex items-center justify-center shadow-lg shadow-[#0084FF]/20 group-hover:-translate-y-1 transition-transform z-10">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/500px-Facebook_Messenger_logo_2020.svg.png"
+          class="w-[1.6rem] h-[1.6rem] ring-anim" style="animation-delay: 0.6s;" alt="Messenger" />
+      </div>
+
+      <div
+        class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-dark text-white text-sm font-semibold rounded-lg opacity-0 translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl z-20">
+        Chat Facebook
+        <div
+          class="absolute right-[-5px] top-1/2 -translate-y-1/2 border-y-[6px] border-y-transparent border-l-[6px] border-l-dark">
+        </div>
+      </div>
+    </a>
+
+    <!-- Zalo -->
+    <a href="https://zalo.me/0838083300" target="_blank" class="relative w-12 h-12 group block">
+      <!-- Ping Effect -->
+      <div class="absolute inset-0 rounded-full animate-ping bg-[#0068FF] opacity-40"
+        style="animation-duration: 2s; animation-delay: 1.2s;"></div>
+
+      <!-- Button Face -->
+      <div
+        class="absolute inset-0 bg-white rounded-full flex items-center justify-center shadow-lg shadow-[#0068FF]/20 group-hover:-translate-y-1 transition-transform z-10">
+        <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-Arc.png" class="w-8 h-8 ring-anim"
+          style="animation-delay: 1.2s;" alt="Zalo" />
+      </div>
+
+      <!-- Tooltip -->
+      <div
+        class="absolute right-full mr-4 top-1/2 -translate-y-1/2 px-3 py-1.5 bg-dark text-white text-sm font-semibold rounded-lg opacity-0 translate-x-2 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl z-20">
+        Chat Zalo
+        <div
+          class="absolute right-[-5px] top-1/2 -translate-y-1/2 border-y-[6px] border-y-transparent border-l-[6px] border-l-dark">
+        </div>
+      </div>
+    </a>
   </div>
 
   <!-- BACK TO TOP -->
