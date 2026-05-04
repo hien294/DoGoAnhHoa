@@ -182,10 +182,10 @@ function showAllProducts() {
                 <p class="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">${p.description}</p>
               </div>
               <div class="flex gap-3">
-                <a href="${generateZaloLink(p.title)}" target="_blank" class="flex-1 bg-dark text-white text-center py-2.5 rounded-full font-bold text-sm hover:bg-gold hover:text-dark transition-all">
-                  Liên Hệ Zalo
+                <a href="${generateZaloLink(p.title)}" target="_blank" class="flex-1 bg-dark text-white text-center py-2.5 rounded-xl font-bold text-sm hover:bg-gold hover:text-dark transition-all">
+                  Liên Hệ
                 </a>
-                <button onclick="openModal(${p.id})" class="flex-1 border-2 border-dark text-dark py-2.5 rounded-full font-bold text-sm hover:bg-dark hover:text-white transition-all">
+                <button onclick="openModal(${p.id})" class="flex-1 border-2 border-dark text-dark py-2.5 rounded-xl font-bold text-sm hover:bg-dark hover:text-white transition-all">
                   Chi Tiết
                 </button>
               </div>
